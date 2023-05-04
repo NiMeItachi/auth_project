@@ -24,21 +24,25 @@ class AuthController {
     if(!name.startsWith(RegExp(r"^[A-Z].{3,}$"))) {
       result["message"] = "Wrong Name";
       result["next"] = "not";
+      return result;
     }
     
     if(!email.contains(RegExp(r'^([a-zA-Z\d._%+-]+)@([a-zA-Z\d.-]+\.[a-zA-Z]{2,})$'))) {
       result["message"] = "Wrong Email";
       result["next"] = "not";
+      return result;
     }
 
     if(!birthDate.contains(RegExp(r'^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$'))) {
       result["message"] = "Wrong BirthDate";
       result["next"] = "not";
+      return result;
     }
 
     if(!password.contains(RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,20}$'))) {
       result["message"] = "Wrong Password";
       result["next"] = "not";
+      return result;
     }
 
 

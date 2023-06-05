@@ -15,7 +15,7 @@
 
 To run this Flutter project locally, follow these steps:
 
-1. Clone the repository: git clone https://github.com/NiMeItachi/auth_app_git.git
+1. Clone the repository: git clone https://github.com/NiMeItachi/auth_app.git
 2. Open the project in your preferred IDE or code editor.
 3. Ensure you have Flutter SDK installed.
 4. Run flutter pub get to fetch the project dependencies.

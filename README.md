@@ -1,4 +1,4 @@
-# Airplane project
+# Auth project
 
 
 ## Features
